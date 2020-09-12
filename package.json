@@ -1,0 +1,23 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "'Project student, tours organization for your funny holidays'",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass app/sass/main.scss app/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeIsaMystic/Natours-project.git"
+  },
+  "author": "\"Jonas\",",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeIsaMystic/Natours-project/issues"
+  },
+  "homepage": "https://github.com/CodeIsaMystic/Natours-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
+}
