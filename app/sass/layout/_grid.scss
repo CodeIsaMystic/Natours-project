@@ -1,10 +1,8 @@
 /*  =grid   */
 .row {
   max-width: $grid-width;
-  background-color: $color-grey-dark;
   margin: 0 auto;
   margin-bottom: $gutter-vertical;
-  text-align: center;
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
@@ -14,9 +12,8 @@
 
 /*  ^ Will select all attributes who start with "col-"  */
   [class^="col-"] {
-    padding: 1rem;
+    /*padding: 1rem;*/
     float: left;
-    background-color: $color-primary;
 
     &:not(:last-child) {
     margin-right: $gutter-horizontal;
