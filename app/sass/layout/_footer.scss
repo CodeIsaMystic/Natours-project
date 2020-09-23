@@ -60,7 +60,7 @@
     &:hover, &:active {
       color: $color-primary;
       box-shadow: 0 1rem 2rem rgba($color-black, .4);
-      transform: rotate(2deg) scale(1.1);
+    transform: skewY(-.3deg) skewX(3deg) scale(1.03);
     }
   }
 

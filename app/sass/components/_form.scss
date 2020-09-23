@@ -82,12 +82,12 @@
 
   &__radio-button {
     display: inline-block;
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
     position: absolute;
     left: 0;
-    top: 1.5px;
-    border: 2px solid $color-primary;
+    top: 5px;
+    border: 1px solid $color-primary;
     border-radius: 50%;
 
 
@@ -95,8 +95,8 @@
     &::after {
       content: "";
       display: block;
-      height: .95rem;
-      width: .95rem;
+      height: .6rem;
+      width: .6rem;
       border-radius: 50%;
       position: absolute;
       top: 50%;

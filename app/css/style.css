@@ -141,7 +141,7 @@ body {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
-    transform: skewY(-0.5deg) skewX(10deg) scale(1.05);
+    transform: skewY(-0.3deg) skewX(3deg) scale(1.03);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .heading-tertiary {
@@ -423,7 +423,7 @@ we do need "\#{}" to insert a SASS variable */ }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(2deg) scale(1.1); }
+    transform: skewY(-0.3deg) skewX(3deg) scale(1.03); }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -559,12 +559,14 @@ we do need "\#{}" to insert a SASS variable */ }
           left: 0;
           transform: scale(1.15); } }
     .composition__photo:hover {
-      outline: 0.5rem solid #55c57a;
-      transform: scale(1.05) translateY(-0.5rem);
+      outline: 0.2rem solid #55c57a;
+      transform: scale(1.25) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.95); }
+    transform: scale(1);
+    z-index: 18;
+    opacity: .3; }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -842,18 +844,18 @@ we do need "\#{}" to insert a SASS variable */ }
 
 .form__radio-button {
   display: inline-block;
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.2rem;
+  width: 1.2rem;
   position: absolute;
   left: 0;
-  top: 1.5px;
-  border: 2px solid #55c57a;
+  top: 5px;
+  border: 1px solid #55c57a;
   border-radius: 50%; }
   .form__radio-button::after {
     content: "";
     display: block;
-    height: .95rem;
-    width: .95rem;
+    height: .6rem;
+    width: .6rem;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -894,11 +896,18 @@ we do need "\#{}" to insert a SASS variable */ }
   .popup__left {
     display: table-cell;
     width: 33.333333%; }
+    @media (max-width: 75em) {
+      .popup__left {
+        display: none;
+        width: 0; } }
   .popup__right {
     display: table-cell;
     width: 66.666666%;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        text-align: center; } }
   .popup__img {
     display: block;
     width: 100%;
@@ -916,6 +925,14 @@ we do need "\#{}" to insert a SASS variable */ }
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        -moz-column-count: 1;
+        -moz-column-gap: none;
+        -moz-column-rule: none;
+        column-count: 1;
+        column-gap: none;
+        column-rule: none; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
