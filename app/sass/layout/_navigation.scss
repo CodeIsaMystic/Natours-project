@@ -1,9 +1,8 @@
 .navigation {
   &__checkbox {
     display: none;
-
-
   }
+
 
   &__button {
     background-color: $color-white;
@@ -22,6 +21,7 @@
       top: 3rem;
       right: 3rem;
     }
+
     @include respond(phone) {
       top: 2.5rem;
       right: 2.5rem;
@@ -85,31 +85,31 @@
 
   &__link {
 
-    &:link, &:visited { 
+    &:link,
+    &:visited {
       display: inline-block;
-      padding: 1rem 2rem;   
+      padding: 1rem 2rem;
       font-size: 3rem;
       font-weight: 300;
       color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
       //  Building the link bg effect
-      background-image: linear-gradient(
-        120deg, 
-        transparent 0%, 
-        transparent 50%,
-        $color-white 50% 
-      );
+      background-image: linear-gradient(120deg,
+          transparent 0%,
+          transparent 50%,
+          $color-white 50%);
       background-size: 240%;
       transition: all .4s;
 
       span {
         margin-right: 1.5rem;
-        display: inline-block;
+        //display: inline-block;
       }
     }
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       background-position: 100%;
       color: $color-primary;
       transform: translateX(1rem);
@@ -119,12 +119,12 @@
 
 
 
-  &__checkbox:checked ~ &__background {
+  &__checkbox:checked~&__background {
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav {
-    opacity: 1;
+  &__checkbox:checked~&__nav {
+    opacity: 1 !important;
     width: 100%;
   }
 
@@ -134,9 +134,11 @@
     position: relative;
     margin-top: 3.5rem;
 
-    &, &::before, &::after {
+    &,
+    &::before,
+    &::after {
       display: inline-block;
-      
+
       width: 3rem;
       height: 2px;
       background-color: $color-grey-dark-3;
@@ -145,34 +147,43 @@
 
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: "";
       position: absolute;
       left: 0;
       transition: all .2s;
     }
 
-    &::before { top: -.7rem;}
-    &::after { top: .7rem;}
+    &::before {
+      top: -.7rem;
+    }
+
+    &::after {
+      top: .7rem;
+    }
   }
 
   &__button:hover &__icon::before {
     top: -1.1rem;
   }
+
   &__button:hover &__icon::after {
     top: 1.1rem;
   }
 
   //  Checkbox Hack
-  &__checkbox:checked + &__button &__icon {
+  &__checkbox:checked+&__button &__icon {
     background-color: transparent;
   }
-  &__checkbox:checked + &__button &__icon::before {
+
+  &__checkbox:checked+&__button &__icon::before {
     top: 0;
-    transform : rotate(135deg);
+    transform: rotate(135deg);
   }
-  &__checkbox:checked + &__button &__icon::after {
+
+  &__checkbox:checked+&__button &__icon::after {
     top: 0;
-    transform : rotate(-135deg);
+    transform: rotate(-135deg);
   }
 }

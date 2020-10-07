@@ -305,8 +305,7 @@ we do need "\#{}" to insert a SASS variable */ }
   background-size: 240%;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
-    margin-right: 1.5rem;
-    display: inline-block; }
+    margin-right: 1.5rem; }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -317,7 +316,7 @@ we do need "\#{}" to insert a SASS variable */ }
   transform: scale(80); }
 
 .navigation__checkbox:checked ~ .navigation__nav {
-  opacity: 1;
+  opacity: 1 !important;
   width: 100%; }
 
 .navigation__icon {
