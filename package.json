@@ -4,7 +4,7 @@
   "description": "'Project student, tours organization for your funny holidays'",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass app/sass/main.scss app/css/style.css ",
+    "compile:sass": "node-sass app/sass/main.scss docs/css/style.min.css ",
     "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
   },
   "repository": {
