@@ -26,8 +26,6 @@
       top: 2.5rem;
       right: 2.5rem;
     }
-
-
   }
 
   &__background {
@@ -85,6 +83,9 @@
 
   &__link {
 
+    opacity: 0;
+    visibility: hidden;
+
     &:link,
     &:visited {
       display: inline-block;
@@ -124,8 +125,12 @@
   }
 
   &__checkbox:checked~&__nav {
-    opacity: 1 !important;
+    opacity: 1;
     width: 100%;
+  }
+  &__checkbox:checked~&__nav &__link {
+    opacity: 1;
+    visibility: visible;
   }
 
 
