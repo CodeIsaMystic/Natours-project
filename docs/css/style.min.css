@@ -1,3 +1,4 @@
+/*  ABSTRACTS  */
 /*  =Clearfix  */
 /*  =Positionning center  */
 /*  =Media queries manager */
@@ -32,6 +33,7 @@
 /*   =color-variables    */
 /*  =basics  */
 /*   =grid-variables    */
+/*  BASE  */
 /*  =animations header   */
 @keyframes moveInLeft {
   0% {
@@ -181,6 +183,7 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+/*  LAYOUT  */
 /*  =grid   */
 .row {
   max-width: 114rem;
@@ -440,6 +443,7 @@ we do need "\#{}" to insert a SASS variable */ }
         float: none;
         text-align: center; } }
 
+/*  COMPONENTS  */
 .bg-video {
   position: absolute;
   top: 0;
@@ -957,6 +961,7 @@ we do need "\#{}" to insert a SASS variable */ }
   .popup__close:hover {
     color: #55c57a; }
 
+/*  PAGES  */
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
